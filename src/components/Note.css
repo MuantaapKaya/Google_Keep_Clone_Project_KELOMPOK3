@@ -137,3 +137,10 @@
     .note-button-cancel:hover {
         background-color: #f1f3f4;
     }
+
+.note-date {
+    font-size: 12px;
+    color: #5f6368;
+    margin-top: 16px;
+    opacity: 0.8;
+}
