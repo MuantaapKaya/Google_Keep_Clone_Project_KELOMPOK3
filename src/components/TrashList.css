@@ -1,0 +1,35 @@
+.trash-container {
+  padding: 0;
+}
+
+.trash-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.trash-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  color: #999;
+}
+
+.trash-empty-text {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .trash-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .trash-container {
+    padding: 15px;
+  }
+}

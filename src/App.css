@@ -1,41 +1,41 @@
 .app {
-    min-height: 100vh;
-    background-color: #fff;
+  min-height: 100vh;
+  background-color: #fff;
 }
 
 .app-main {
-    padding-bottom: 32px;
+  padding-bottom: 32px;
 }
 /* Loading animation (optional) */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .app-main > * {
-    animation: fadeIn 0.3s ease-in-out;
+  animation: fadeIn 0.3s ease-in-out;
 }
 /* Scrollbar styling */
 ::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+  background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 4px;
+  background: #888;
+  border-radius: 4px;
 }
 
-    ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-    }
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
