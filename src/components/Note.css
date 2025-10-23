@@ -137,3 +137,13 @@
     .note-button-cancel:hover {
         background-color: #f1f3f4;
     }
+
+.note-image {
+  width: 100%;
+  height: auto;
+  /* Style ini membuatnya menempel rapi di atas kartu */
+  border-radius: 8px 8px 0 0;
+  margin: -16px -16px 16px -16px;
+  object-fit: cover;
+  border-bottom: 1px solid #e0e0e0;
+}
