@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\build",
+    "\\build\\static",
+    "\\build\\static\\css",
+    "\\build\\static\\js",
+    "\\build\\static\\media",
+    "\\public",
+    "\\src",
+    "\\src\\components"
+  ],
+  "PreviewInSolutionExplorer": false
+}
