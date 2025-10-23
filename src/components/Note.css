@@ -4,6 +4,7 @@
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     padding: 16px;
+    overflow: hidden; /* Pastikan konten (gambar) terpotong mengikuti border radius */
     transition: box-shadow 0.2s, transform 0.2s;
     break-inside: avoid; /* Mencegah kartu terpotong di layout kolom */
     cursor: pointer;
@@ -139,13 +140,12 @@
     }
 
 .note-image {
-  width: 100%;
-  height: auto;
-  /* Style ini membuatnya menempel rapi di atas kartu */
-  border-radius: 8px 8px 0 0 !important; 
-  margin: -16px -16px 16px -16px !important;
-  object-fit: cover !important;
-  border-bottom: 1px solid #e0e0e0;
+    display: block; /* Hilangkan gap bawaan inline image */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 0;
+    border-bottom: 1px solid #e0e0e0;
 }
 .note-date {
     font-size: 12px;

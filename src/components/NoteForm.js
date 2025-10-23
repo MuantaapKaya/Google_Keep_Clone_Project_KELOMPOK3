@@ -89,7 +89,7 @@ function NoteForm({ addNote }) {
           {!isExpanded && (
             <div className="note-form-collapsed-actions">
               <label className="note-form-icon-btn">
-                <svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19 13v-2c0-1.1-.9-2-2-2h-1.17c-.53-1.1-1.63-2-2.83-2s-2.3.9-2.83 2H9c-1.1 0-2 .9-2 2v2H4v7h16v-7h-3zm-6-2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2 2zM5 18v-5h1.76c.45-.71 1.09-1.32 1.86-1.76L7.7 13 6 15.52V18H5zm14 0h-1v-2.48L16.3 13l-.92-1.22c.77.44 1.41 1.05 1.86 1.76H19v5z"/></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
                 <input 
                   type="file" 
                   accept="image/*" 
@@ -105,7 +105,7 @@ function NoteForm({ addNote }) {
           <div className="note-form-actions">
             {/* MODIFIKASI 10: Ikon upload saat form TERBUKA */}
             <label className="note-form-icon-btn">
-                <svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19 13v-2c0-1.1-.9-2-2-2h-1.17c-.53-1.1-1.63-2-2.83-2s-2.3.9-2.83 2H9c-1.1 0-2 .9-2 2v2H4v7h16v-7h-3zm-6-2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2 2zM5 18v-5h1.76c.45-.71 1.09-1.32 1.86-1.76L7.7 13 6 15.52V18H5zm14 0h-1v-2.48L16.3 13l-.92-1.22c.77.44 1.41 1.05 1.86 1.76H19v5z"/></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
                 <input 
                   type="file" 
                   accept="image/*" 
