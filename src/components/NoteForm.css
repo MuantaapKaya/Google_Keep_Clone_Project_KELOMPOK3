@@ -82,3 +82,70 @@
         box-shadow: none;
     }
 
+
+/* Untuk preview gambar */
+.note-form-image-preview {
+  position: relative;
+  margin-bottom: 12px;
+}
+.note-form-image-preview img {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+.note-form-image-remove {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Untuk wrapper textarea + ikon */
+.note-form-main-input {
+  display: flex;
+  align-items: center;
+}
+.note-form-textarea {
+  flex: 1; /* Bikin textarea mengisi ruang */
+}
+.note-form-collapsed-actions {
+  display: flex;
+  padding: 0 8px;
+  gap: 8px;
+}
+
+/* Style umum untuk tombol ikon */
+.note-form-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #5f6368;
+  transition: background-color 0.2s;
+  background: none;
+  border: none;
+}
+.note-form-icon-btn:hover {
+  background-color: #f1f3f4;
+}
+.note-form-icon-btn input[type="file"] {
+  display: none;
+}
+
+/* Pastikan tombol aksi di bawah terpisah */
+.note-form-actions {
+  justify-content: space-between !important; /* !important untuk override style asli */
+  align-items: center;
+}

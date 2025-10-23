@@ -64,6 +64,7 @@ function Note({ note, updateNote, deleteNote }) {
             ) : (
                 // Tampilan Mode Lihat (Default)
                 <div className="note-view" onClick={() => setIsEditing(true)}>
+                    <img src={note.imageBase64} alt="Note content" className="note-image" />
                     {note.title && <h3 className="note-title">{note.title}</h3>}
                     <p className="note-content">{note.content}</p>
                     <div className="note-actions">

@@ -36,7 +36,8 @@ function App() {
             id: Date.now(), // ID unik sederhana menggunakan timestamp
             title: noteData.title,
             content: noteData.content,
-            createdAt: new Date().toISOString()
+            createdAt: new Date().toISOString(),
+            imageBase64: noteData.imageBase64 || null
         };
         // Tambahkan catatan baru ke awal array `notes`
         setNotes([newNote, ...notes]);
