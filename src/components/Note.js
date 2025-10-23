@@ -2,11 +2,19 @@ import React, { useState } from 'react';
 import './Note.css';
 
 function Note({ note, updateNote, deleteNote }) {
-    // State untuk melacak apakah catatan sedang diedit atau tidak
-    const [isEditing, setIsEditing] = useState(false);
-    // State untuk menyimpan judul dan konten yang sedang diedit
-    const [editTitle, setEditTitle] = useState(note.title);
-    const [editContent, setEditContent] = useState(note.content);
+// State untuk melacak apakah catatan sedang diedit atau tidak
+const [isEditing, setIsEditing] = useState(false);
+// State untuk menyimpan judul dan konten yang sedang diedit
+const [editTitle, setEditTitle] = useState(note.title);
+const [editContent, setEditContent] = useState(note.content);
+const date = new Date(note.createdAt);
+
+// Format tanggal pembuatan catatan
+const day = String(date.getDate()).padStart(2, '0'); //Ambil hari
+const month = String(date.getMonth() + 1).padStart(2, '0'); //ambil bulan
+const year = date.getFullYear(); // Ambil Tahun
+
+const formattedDate = `${day}/${month}/${year}`;
 
     // Fungsi untuk menyimpan catatan yang sudah diedit
     const handleSave = () => {
@@ -67,6 +75,9 @@ function Note({ note, updateNote, deleteNote }) {
                     <img src={note.imageBase64} alt="Note content" className="note-image" />
                     {note.title && <h3 className="note-title">{note.title}</h3>}
                     <p className="note-content">{note.content}</p>
+                    <p className="note-date">
+                        Dibuat pada: {formattedDate}
+                    </p>
                     <div className="note-actions">
                         <button
                             onClick={(e) => {
