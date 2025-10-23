@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 
-function Header({ onTrashClick, trashCount }) {
+function Header({ onTrashClick, trashCount, searchQuery, setSearchQuery }) {
   return (
     <header className="header">
       <div className="header-content">
@@ -19,6 +19,17 @@ function Header({ onTrashClick, trashCount }) {
           </svg>
           <h1 className="header-title">Keep</h1>
         </div>
+
+        <div className="header-search">
+          <input
+            type="text"
+            placeholder="Search..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="header-search-input"
+          />
+        </div>
+
         <div className="header-right">
           <button
             className="header-trash-btn"

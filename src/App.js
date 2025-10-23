@@ -14,6 +14,8 @@ function App() {
   const [trashNotes, setTrashNotes] = useState([]);
   // State untuk mengontrol sidebar trash
   const [isTrashSidebarOpen, setIsTrashSidebarOpen] = useState(false);
+  // State untuk menyimpan query pencarian
+  const [searchQuery, setSearchQuery] = useState('');
 
   // --- Side Effects ---
 
@@ -133,15 +135,22 @@ function App() {
     setIsTrashSidebarOpen(false);
   };
 
+  const filteredNotes = notes.filter(note => {
+  const titleMatch = note.title.toLowerCase().includes(searchQuery.toLowerCase());
+  const contentMatch = note.content.toLowerCase().includes(searchQuery.toLowerCase());
+  return titleMatch || contentMatch;
+});
+
   // --- Tampilan Komponen ---
 
   return (
     <div className="app">
-      <Header onTrashClick={openTrashSidebar} trashCount={trashNotes.length} />
+          <Header onTrashClick={openTrashSidebar} trashCount={trashNotes.length} searchQuery={searchQuery}
+              setSearchQuery={setSearchQuery} />
       <main className="app-main">
         <NoteForm addNote={addNote} />
         <NotesList
-          notes={notes}
+          notes={filteredNotes}
           updateNote={updateNote}
           deleteNote={moveToTrash}
         />

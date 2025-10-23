@@ -76,3 +76,39 @@
   justify-content: center;
   border: 2px solid white;
 }
+
+/* STYLE UNTUK SEARCH BAR */
+
+.header-search {
+    margin-right: 16px;
+    width: 50%;
+    max-width: 450px;
+    position: relative;
+    margin-left: 24px;
+}
+
+.header-search-input {
+    width: 100%;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f1f3f4;
+    font-size: 15px;
+    outline: none;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.header-search-input:focus {
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    width: 100%;
+}
+
+.header-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
