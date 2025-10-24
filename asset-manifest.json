@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Google_Keep_Clone_Project_KELOMPOK3/static/css/main.fde5e084.css",
+    "main.js": "/Google_Keep_Clone_Project_KELOMPOK3/static/js/main.27f16180.js",
+    "index.html": "/Google_Keep_Clone_Project_KELOMPOK3/index.html",
+    "main.fde5e084.css.map": "/Google_Keep_Clone_Project_KELOMPOK3/static/css/main.fde5e084.css.map",
+    "main.27f16180.js.map": "/Google_Keep_Clone_Project_KELOMPOK3/static/js/main.27f16180.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fde5e084.css",
+    "static/js/main.27f16180.js"
+  ]
+}
